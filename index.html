@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunny-Love-Productions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+      <nav class="navbar">
+    <img src="assets/bunnylogo.png" alt="Bunny Logo" class="nav-bunny" />
+    <h3 class="nav-logo">Bunny Love</h3>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <img src="assets/bunnylogo.png" alt="Bunny Logo" class="hero-bunny" />
+
+    <h1 class="site-title">Bunny-Love-Productions</h1>
+
+    <p class="tagline">
+      where the <span class="glam-silver">magic</span> happens
+    </p>
+
+    <a class="cta-button" href="https://onlyfans.com/u373072242" target="_blank">
+      Join My OnlyFans
+    </a>
+
+ 
+    <div class="sparkle" style="top: 20%; left: 40%;"></div>
+    <div class="sparkle" style="top: 55%; left: 60%;"></div>
+    <div class="sparkle" style="top: 70%; left: 30%;"></div>
+  </header>
+
+  <section id="about" class="section about-section">
+    <p class="section_tag">About</p>
+    <h2 class="section_title">Who I Am</h2>
+    <p class="about-text">
+      Welcome to Bunny‑Love Productions — a space where elegance meets playful magic.
+      I create premium, exclusive content with a soft, feminine aesthetic and a touch
+      of sparkle. This is your invitation into my wonderland.
+    </p>
+  </section>
+
+  <section id="gallery" class="section gallery-section">
+    <p class="section_tag">Gallery</p>
+    <h2 class="section_title">Preview</h2>
+
+    <div class="gallery-grid">
+      <img src="assets/frontbunnyoutside.jpg" alt="Preview 1" class="gallery-img" />
+      <img src="assets/dockyogaWI.jpg" alt="Preview 2" class="gallery-img" />
+      <img src="assets/Nursebunny.jpg" alt="Preview 3" class="gallery-img" />
+    </div>
+
+    <a class="cta-button small" href="https://onlyfans.com/u373072242" target="_blank">See More on OnlyFans</a>
+  </section>
+  <section id="contact" class="section contact-section">
+    <p class="section_tag">Contact</p>
+    <p class="contact-info">
+      <a href="https://onlyfans.com/u373072242" target="_blank">
+      check out my OnlyFans
+    </a>
+    </p>
+  </section>
+  <section id="pricing" class="section pricing-section">
+  <p class="section_tag">Packages</p>
+  <h2 class="section_title">Sign‑Up Options</h2>
+
+  <div class="pricing-grid">   
+    <div class="pricing-card silver">
+      <h3 class="tier-title">Silver</h3>
+      <p class="tier-price">$7
+        <li>Daily drops</li>
+        <li>SFW teasers</li>
+        <li>Priority replies</li>
+      </ul>
+      <a class="cta-button small" href="https://onlyfans.com/u373072242" target="_blank">Join Silver</a>
+    </div>
+
+    <div class="pricing-card gold">
+      <h3 class="tier-title">Gold</h3>
+      <p class="tier-price">$17 / month</p>
+      <ul class="tier-list">
+        <li>Everything in Silver</li>
+        <li>Exclusive photo drops</li>
+        <li>Faster message priority</li>
+        <li>Fan polls + playful requests</li>
+      </ul>
+      <a class="cta-button small" href="https://onlyfans.com/u373072242" target="_blank">Join Gold</a>
+    </div> 
+
+    <div class="pricing-card platinum">
+      <h3 class="tier-title">Platinum</h3>
+      <p class="tier-price">$27 / month</p>
+      <ul class="tier-list">
+        <li>Everything in Gold</li>
+        <li>Exclusive weekly video</li>
+        <li>VIP chat access</li>
+        <li>Priority custom requests</li>
+        <li>Personalized shout-outs</li>
+      </ul>
+      <a class="cta-button small" href="https://onlyfans.com/u373072242" target="_blank">Join Platinum</a>
+    </div>
+
+  </div>
+</section>
+  <footer class="footer">
+    <img src="assets/bunnylogo.png" alt="Bunny Logo" class="footer-bunny" />
+    <p class="footer-text">© 2026 Bunny‑Love-Productions</p>
+  </footer>
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
