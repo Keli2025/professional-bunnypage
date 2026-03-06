@@ -42,13 +42,14 @@ body {
 }
 
 .nav-btn {
-    padding: 10px 18px;
+    padding: 12px 22px;
     background: #ff4fd8;
     color: white;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .nav-btn:hover {
@@ -63,68 +64,79 @@ body {
     align-items: center;
     text-align: center;
     background: radial-gradient(circle at top, #ff4fd8 0%, #0d0d0d 70%);
-}
-header, .hero, .top-section {
+    padding: 40px 20px;
     margin-bottom: 120px;
 }
-.hero {
-    flex-shrink: 0;
-}
+
 .hero-bunny {
     width: 120px;
     margin-bottom: 20px;
     animation: float 4s ease-in-out infinite;
 }
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* CINEMATIC STRIP */
 .cinematic-track {
-  display: flex;
-  justify-content: center;
-  gap: 10px;              
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 10px 0;
-  margin: 0 auto;
-  max-width: 900px;
-  scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 900px;
+    scrollbar-width: none;
 }
 
 .cinematic-track::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .frame {
-  min-width: 22%;          /* smaller, more vertical */
-  max-width: 260px;        /* hard cap for desktop */
-  scroll-snap-align: center;
-  position: relative;
-  aspect-ratio: 3 / 5;     /* tall, head-focused */
+    min-width: 22%;
+    max-width: 260px;
+    scroll-snap-align: center;
+    position: relative;
+    aspect-ratio: 3 / 5;
 }
 
 .frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 22%; /* keeps the face in frame */
-  border-radius: 12px;
-  filter: brightness(0.9);
-  transition: transform .25s ease, filter .25s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    border-radius: 12px;
+    filter: brightness(0.9);
+    transition: transform .25s ease, filter .25s ease;
 }
 
 /* ABOUT SECTION */
 .about {
-    padding: 60px 20px;
+    max-width: 800px;
+    margin: 120px auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .about h2 {
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #ff4fd8;
 }
 
 .about p {
-    max-width: 600px;
-    margin: auto;
     font-size: 1.1rem;
+    line-height: 1.6;
     opacity: 0.9;
 }
 
